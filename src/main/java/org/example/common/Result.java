@@ -3,10 +3,11 @@ package org.example.common;
 /**
  * 统一返回对象中，Code码、Info描述
  */
-public class Result {
+public class Result<T> {
 
     private String code;
     private String info;
+    private T data;
 
     public String getCode() {
         return code;
@@ -24,4 +25,11 @@ public class Result {
         this.info = info;
     }
 
+    public T getData() {
+        return data;
+    }
+
+    public void setData(T data) {
+        this.data = data;
+    }
 }
