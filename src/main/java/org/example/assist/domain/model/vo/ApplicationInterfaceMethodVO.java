@@ -1,4 +1,4 @@
-package org.example.domain.model.vo;
+package org.example.assist.domain.model.vo;
 
 /**
  * 接口方法 VO
@@ -82,9 +82,14 @@ public class ApplicationInterfaceMethodVO {
         return auth;
     }
 
+    public boolean isAuth(){
+        return auth == 1;
+    }
+
     public void setAuth(Integer auth) {
         this.auth = auth;
     }
 
 }
+
 

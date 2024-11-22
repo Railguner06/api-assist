@@ -1,10 +1,10 @@
-package org.example;
+package org.example.assist;
 
 import cn.hutool.http.HttpUtil;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.TypeReference;
-import org.example.common.Result;
-import org.example.domain.model.aggregates.ApplicationSystemRichInfo;
+import org.example.assist.common.Result;
+import org.example.assist.domain.model.aggregates.ApplicationSystemRichInfo;
 import org.junit.Test;
 
 import java.util.HashMap;
@@ -44,5 +44,6 @@ public class ApiTest {
     }
 
 }
+
 
 

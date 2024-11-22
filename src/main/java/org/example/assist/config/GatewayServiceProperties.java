@@ -1,4 +1,4 @@
-package org.example.config;
+package org.example.assist.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
@@ -60,4 +60,5 @@ public class GatewayServiceProperties {
     }
 
 }
+
 

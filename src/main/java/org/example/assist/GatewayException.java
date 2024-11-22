@@ -1,4 +1,4 @@
-package org.example;
+package org.example.assist;
 
 /**
  * 网关异常

@@ -1,4 +1,4 @@
-package org.example.domain.model.vo;
+package org.example.assist.domain.model.vo;
 
 import java.util.List;
 

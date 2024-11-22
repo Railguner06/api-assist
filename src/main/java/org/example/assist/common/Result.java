@@ -1,4 +1,4 @@
-package org.example.common;
+package org.example.assist.common;
 
 /**
  * 统一返回对象中，Code码、Info描述

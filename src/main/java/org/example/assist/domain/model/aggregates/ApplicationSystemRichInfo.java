@@ -1,6 +1,6 @@
-package org.example.domain.model.aggregates;
+package org.example.assist.domain.model.aggregates;
 
-import org.example.domain.model.vo.ApplicationSystemVO;
+import org.example.assist.domain.model.vo.ApplicationSystemVO;
 
 import java.util.List;
 
