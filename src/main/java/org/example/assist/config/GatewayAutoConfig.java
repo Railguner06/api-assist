@@ -30,8 +30,8 @@ public class GatewayAutoConfig {
     }
 
     @Bean
-    public GatewayApplication gatewayApplication(GatewayServiceProperties properties, GatewayCenterService registerGatewayService, org.example.core.session.Configuration configuration) {
-        return new GatewayApplication(properties, registerGatewayService, configuration);
+    public GatewayApplication gatewayApplication(GatewayServiceProperties properties, GatewayCenterService registerGatewayService, org.example.core.session.Configuration configuration, Channel gatewaySocketServerChannel) {
+        return new GatewayApplication(properties, registerGatewayService, configuration, gatewaySocketServerChannel);
     }
 
     /**
@@ -49,7 +49,7 @@ public class GatewayAutoConfig {
     /**
      * 初始化网关服务；创建服务端 Channel 对象，方便获取和控制网关操作。
      */
-    @Bean
+    @Bean("gatewaySocketServerChannel")
     public Channel initGateway(org.example.core.session.Configuration configuration) throws ExecutionException, InterruptedException {
         // 1. 基于配置构建会话工厂
         DefaultGatewaySessionFactory gatewaySessionFactory = new DefaultGatewaySessionFactory(configuration);
